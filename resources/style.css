@@ -34,9 +34,32 @@ header{display: flex;
     color: black;
     margin-left: 1em;}
 
+
+
+
   h1{font-size: 4em;}
 
   .headspace{height: 64px;}
+
+
+
+  @media only screen and (min-width: 400px){ .smallnav{display: none;}  }
+
+  @media only screen and (max-width: 400px){
+
+    nav a{display: none;}
+
+    .smallnav{display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;}
+
+    .smallnav a{display: inline;}
+
+    .headleft {display: none;}
+
+  }
 
 /*banner*/
 
