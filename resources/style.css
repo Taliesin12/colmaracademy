@@ -43,9 +43,9 @@ header{display: flex;
 
 
 
-  @media only screen and (min-width: 400px){ .smallnav{display: none;}  }
+  @media only screen and (min-width: 480px){ .smallnav{display: none;}  }
 
-  @media only screen and (max-width: 400px){
+  @media only screen and (max-width: 480px){
 
     nav a{display: none;}
 
@@ -93,6 +93,15 @@ header{display: flex;
   @media only screen and (max-width: 870px){
     h1{ font-size: 2em;}  }
 
+  @media only screen and (max-width: 480px){
+    .banner img{width: 100%;
+      padding: 0px 0px 0px 0px;}
+    .banner {flex-direction: column;}
+
+    .bnrright{padding: 32px 16px;}
+  }
+
+
 /*information*/
 
 .information{display: flex;
@@ -123,6 +132,8 @@ header{display: flex;
     height: 100%;
     padding: 1em;}
 
+  .noder img{display: none;}
+
   .noder{display: flex;
     flex-direction: column;
     justify-content: center;}
@@ -131,6 +142,19 @@ header{display: flex;
 
   h4 {font-weight: bold;}
 
+  @media only screen and (max-width: 480px){
+    .information .left{display: none;}
+
+    .information .right {width: 100%;}
+
+    .node img{display: none;}
+
+    .noder img{display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 16px;}
+  }
 
 /*course*/
 
