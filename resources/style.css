@@ -147,13 +147,14 @@ header{display: flex;
 
     .information .right {width: 100%;}
 
+    .node {border: none;
+      background-color: none;}
     .node img{display: none;}
 
-    .noder img{display: block;
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-      padding: 16px;}
+    .noder {padding: 16px 16px 16px 16px;
+    border: none;}
+
+
   }
 
 /*course*/
@@ -172,6 +173,21 @@ header{display: flex;
     padding: 0;}
 
   .coursetext{margin: 16px 16px 24px 16px;}
+
+  @media only screen and (max-width: 480px){
+    .course {background-color: white;}
+
+    .coursebar {flex-direction: column;}
+
+    .coursenode img, .coursenode h5, .coursenode p{display: none;}
+
+    .coursenode h4{display: block;}
+
+    .coursenode {margin: 0.5px;
+      background-color: lightgrey;}
+
+  }
+
 /*thesis*/
 
 .thesis {display: flex;
@@ -186,3 +202,10 @@ header{display: flex;
   width: 60%;}
 
   video {width: 100%;}
+
+  @media only screen and (max-width: 480px){
+    .thesisbar .right, .thesisbar h4 , .thesisbar p {display: none;}
+
+    .thesisbar .left{width: 100%;
+    padding: 0px;}
+  }
